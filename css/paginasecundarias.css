@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .Contenedor_Ambitolegal{
     top: 0;
     margin-top: auto;
@@ -72,9 +77,12 @@
 .video_prometea{
     padding-top: 30px;
     width: 560px;
-    height: 450px;
+    height: 315px;
     margin-left: 20%;
     margin-bottom: 35%;
+    display: flex;
+    flex-wrap: wrap; 
+
 }
 /*Empieza la seguna página IA en la biometria*/
 .Contenedor_Biometria{
@@ -132,6 +140,8 @@
     max-width: 100%;
     margin: 0 auto;
     justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;  
 }
 img{
     height: 35%;
@@ -150,10 +160,12 @@ img{
 }
 .medida_contenido3{
     width: 50%;
+    padding: 20px;
     margin-bottom: -20%;
 }
 .medida_contenido4{
     width: 50%;
+    padding: 20px;
     margin-bottom: -20%;
 }
 .Texto_nota{
@@ -177,23 +189,100 @@ img{
     margin: 0 auto;
     overflow: hidden;
 }
-@media all and (min-width: 600px) and (max-width: 1023px){
-        .medida_contenido1{
-            width: 100%;
 
-        }
-        .medida_contenido2{
-            width: 100%;
+@media all and (max-width: 768px)
+{
+    .medida_contenido1{
+        width: 100%;
+    }
+    .medida_contenido2{
+        width: 100%;
+    }
+    .medida_contenido3{
+        width: 100%;
+    }
+    .medida_contenido4{
+        width: 100%;
+        height: auto;
+        background-size: cover;
+    }
+    .contenedor_principal_form
+    {
+        width: 100%;
+        height: 100%;
+        
+    }
 
-        }
-        .medida_contenido3{
-            width: 100%;
+}
+@media all and (max-width: 320px)
+{
+    .medida_contenido1{
+        width: 100%;
+    }
+    .medida_contenido2{
+        width: 100%;
+    }
+    .medida_contenido3{
+        width: 100%;
+    }
+    .medida_contenido4{
+        width: 100%;
+    }
+    .contenedor_principal_form
+    {
+        width: 100%;
+        height: 100%;
+    }
+}
 
-        }
-        .medida_contenido4{
-            width: 100%;
-
-        }
+/*comienza el responsive de la pagina de ambito legal*/
+.conteiner{
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+@media all and (max-width: 768px)
+ {
+    .Contenedor_Ambitolegal{
+        width: 100%;
+    }
+    .sección_ambitolegal{
+        width: 100%;
+    }
+    .sección_ambitolegal h1{
+        width: 100%;
+    }
+    #contenedor_Prometea{
+    width: 100%;
+    }
+    .Articulo_prometea{
+        width: 100%;    
+    }
+    .Articulo_prometea h2{
+        width: 100%;
+    }
+    .Articulo_prometea p{
+        width: 100%;
+    }
+    .Prometea_destacar{
+        width: 100%;
+    }
+    .Prometea_destacar p{
+        width: 100%;
+    }
+    .uno{
+        width: 100%;
+    }
+    .dos{
+        width: 100%;
+    }
+    .imagen_prometea{
+        width: 100%;
+    }
+    .video_prometea{
+        width: 100%;
+    }
 
 }
     
